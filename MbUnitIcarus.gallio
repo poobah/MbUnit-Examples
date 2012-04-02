@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.gallio.org/">
+  <testPackage shadowCopy="false" debug="false">
+    <files>
+      <file>Output\GettingStarted.dll</file>
+      <file>Output\Extensions.dll</file>
+      <file>Output\ExternalData.dll</file>
+      <file>Output\Fixtures.dll</file>
+      <file>Output\InternalData.dll</file>
+      <file>Output\MetaData.dll</file>
+      <file>Output\MoreAssertExamples.dll</file>
+    </files>
+    <hintDirectories />
+    <excludedFrameworkIds />
+    <properties />
+  </testPackage>
+  <testFilters>
+    <testFilter filterName="AutoSave" filterExpr="" />
+    <testFilter filterName="LastRun" filterExpr="" />
+  </testFilters>
+  <extensionSpecifications />
+  <reportDirectory>..\..\..\..\AppData\Roaming\Gallio\Icarus\Reports</reportDirectory>
+  <reportNameFormat>test-report-{0}-{1}</reportNameFormat>
+</testProject>

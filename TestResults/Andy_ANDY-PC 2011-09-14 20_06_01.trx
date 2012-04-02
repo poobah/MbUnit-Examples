@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="08200821-3550-4ab9-8921-5375eb29c9dc" name="Andy@ANDY-PC 2011-09-14 20:06:01" runUser="Andy-PC\Andy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2deb2ab4-7477-4a1b-b3d4-da94ff23b825">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Andy_ANDY-PC 2011-09-14 20_06_01">
+      <DeploymentItem filename="C:\Program Files\Gallio\bin\MbUnit35.dll" />
+      <DeploymentItem filename="C:\Program Files\Gallio\bin\Gallio.dll" />
+      <DeploymentItem filename="C:\Program Files\Gallio\bin\Gallio35.dll" />
+      <DeploymentItem filename="C:\Program Files\Gallio\bin\MbUnit.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-09-14T20:06:01.4397263+01:00" queuing="2011-09-14T20:06:07.7610879+01:00" start="2011-09-14T20:06:08.0291032+01:00" finish="2011-09-14T20:06:11.0552763+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <GallioTestElement name="Sample" storage="C:\Users\Andy\Desktop\Presentation\Code\MbUnit\SampleVStest\bin\Debug\SampleVStest.dll" id="31613265-6165-6562-6633-653537306438" d3p1:Gallio.TestId="e2a1eabef3e570d8" d3p1:Gallio.AssemblyName="SampleVStest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" d3p1:Gallio.NamespaceName="SampleVStest" d3p1:Gallio.TypeName="SampleVStest.Test" d3p1:Gallio.MemberName="Sample" d3p1:Gallio.ParameterName="" d3p1:Gallio.Path="C:\Users\Andy\Desktop\Presentation\Code\MbUnit\SampleVStest\Test.cs" d3p1:Gallio.Line="10" d3p1:Gallio.Column="0" xmlns:d3p1="http://www.gallio.org/">
+      <Execution id="6f034a70-37fc-42ba-a7b5-36ef259a419d" />
+      <Properties>
+        <Property>
+          <Key>TestKind</Key>
+          <Value>Test</Value>
+        </Property>
+      </Properties>
+    </GallioTestElement>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="31613265-6165-6562-6633-653537306438" executionId="6f034a70-37fc-42ba-a7b5-36ef259a419d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <GallioTestResult executionId="6f034a70-37fc-42ba-a7b5-36ef259a419d" testId="31613265-6165-6562-6633-653537306438" testName="Sample" computerName="ANDY-PC" duration="00:00:00.0540000" startTime="2011-09-14T20:06:10.5762489+01:00" endTime="2011-09-14T20:06:10.6362524+01:00" testType="f3589083-259c-4054-87f7-75cdad4b08e5" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f034a70-37fc-42ba-a7b5-36ef259a419d">
+    </GallioTestResult>
+  </Results>
+</TestRun>

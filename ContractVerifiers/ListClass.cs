@@ -1,0 +1,107 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace ContractVerifiers
+{
+    public class ListClass<T> : IList<T>
+    {
+        private readonly List<T> items = new List<T>();
+
+        protected void CheckItemNotNull(T item)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException("item");
+            }
+        }
+
+        public virtual void Add(T item)
+        {
+            CheckItemNotNull(item);
+            items.Add(item);
+        }
+
+        public virtual void Clear()
+        {
+            items.Clear();
+        }
+
+        public virtual bool Contains(T item)
+        {
+            CheckItemNotNull(item);
+            return items.Contains(item);
+        }
+
+        public virtual void CopyTo(T[] array, int arrayIndex)
+        {
+            items.CopyTo(array, arrayIndex);
+        }
+
+        public virtual int Count
+        {
+            get
+            {
+                return items.Count;
+            }
+        }
+
+        public virtual bool IsReadOnly
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        public virtual bool Remove(T item)
+        {
+            CheckItemNotNull(item);
+            return items.Remove(item);
+        }
+
+        public virtual IEnumerator<T> GetEnumerator()
+        {
+            return items.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            foreach (T item in items)
+            {
+                yield return item;
+            }
+        }
+
+        public virtual int IndexOf(T item)
+        {
+            CheckItemNotNull(item);
+            return items.IndexOf(item);
+        }
+
+        public virtual void Insert(int index, T item)
+        {
+            CheckItemNotNull(item);
+            items.Insert(index, item);
+        }
+
+        public virtual void RemoveAt(int index)
+        {
+            items.RemoveAt(index);
+        }
+
+        public virtual T this[int index]
+        {
+            get
+            {
+                return items[index];
+            }
+
+            set
+            {
+                CheckItemNotNull(value);
+                items[index] = value;
+            }
+        }
+    }
+}
